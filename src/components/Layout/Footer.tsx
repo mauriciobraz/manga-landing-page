@@ -64,9 +64,9 @@ const SOCIALS = [
   },
 ];
 
-const Footer: React.FC<React.PropsWithChildren> = ({ children }) => {
+const Footer: React.FC = () => {
   return (
-    <div className="flex w-screen items-start justify-between bg-background-300 px-24 py-12">
+    <div className="flex w-screen flex-col items-start justify-between gap-4 bg-background-300 p-8 md:flex-row lg:px-16 xl:px-24">
       <div className="mt-4 flex gap-4">
         {SOCIALS.map(({ title, path, Icon }) => (
           <Link
@@ -80,7 +80,7 @@ const Footer: React.FC<React.PropsWithChildren> = ({ children }) => {
         ))}
       </div>
 
-      <div className="flex gap-16">
+      <div className="flex flex-col gap-6 md:flex-row md:gap-16">
         {CATEGORIES.map(({ title, pages }) => (
           <div key={title} className="flex flex-col gap-2">
             <h1 className="font-semibold text-brand-400">{title}</h1>
