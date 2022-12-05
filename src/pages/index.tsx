@@ -8,7 +8,7 @@ import { EXPANDED_MANGA_CARDS, VERTICAL_MANGA_CARDS } from '../data/manga';
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col items-start gap-12 px-8 pb-24 md:px-12 lg:px-16 xl:px-24">
+    <div className="flex flex-col items-start gap-8 p-8 pt-0 md:px-12 lg:px-16 xl:px-24">
       <RecommendationsBanner />
       <WeeklyManga data={VERTICAL_MANGA_CARDS} />
       <RecentlyUpdatedManga data={EXPANDED_MANGA_CARDS} />
@@ -26,8 +26,10 @@ const WeeklyManga: React.FC<WeeklyMangaProps> = ({ data }) => {
   }
 
   return (
-    <div className="flex w-full flex-col items-start gap-4">
-      <h1 className="text-xl font-bold text-white">Melhores da semana</h1>
+    <div className="flex w-full flex-col items-start gap-2">
+      <h1 className="text-lg font-bold text-white sm:text-xl">
+        Melhores da semana
+      </h1>
 
       <div className="grid w-full grid-cols-2 justify-between gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8">
         {data.map((manga) => (
@@ -51,8 +53,10 @@ const RecentlyUpdatedManga: React.FC<RecentlyUpdatedMangaProps> = ({
   data,
 }) => {
   return (
-    <div className="flex w-full flex-col items-start gap-4">
-      <h1 className="text-xl font-bold text-white">Atualizados Recentemente</h1>
+    <div className="flex w-full flex-col items-start gap-2">
+      <h1 className="text-lg font-bold text-white sm:text-xl">
+        Atualizados Recentemente
+      </h1>
 
       <div className="grid w-full grid-cols-1 justify-between gap-4 xl:grid-cols-2">
         {data.map((manga) => (
