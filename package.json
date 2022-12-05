@@ -22,6 +22,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-tailwindcss": "^3.7.1",
     "postcss": "^8.4.18",
+    "react-unicons": "link:@types/@iconscout/react-unicons",
     "tailwindcss": "^3.2.1",
     "typescript": "4.8.4"
   }

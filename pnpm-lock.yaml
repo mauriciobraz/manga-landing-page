@@ -14,6 +14,7 @@ specifiers:
   postcss: ^8.4.18
   react: 18.2.0
   react-dom: 18.2.0
+  react-unicons: link:@types/@iconscout/react-unicons
   tailwindcss: ^3.2.1
   typescript: 4.8.4
 
@@ -33,6 +34,7 @@ devDependencies:
   eslint-plugin-prettier: 4.2.1_nrhoyyjffvfyk4vtlt5destxgm
   eslint-plugin-tailwindcss: 3.7.1
   postcss: 8.4.19
+  react-unicons: link:@types/@iconscout/react-unicons
   tailwindcss: 3.2.4_postcss@8.4.19
   typescript: 4.8.4
 
